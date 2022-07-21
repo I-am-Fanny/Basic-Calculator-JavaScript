@@ -1,0 +1,113 @@
+/*--Font-family*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 62.5%;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 15px;
+  background-color: #264653;
+  flex-direction: column;
+}
+
+.title{
+   padding: 5px;
+   margin: 20px;
+   font-size: 4rem;
+   text-align: center;
+   color: #f5dfa8;
+   text-shadow: 3px solid #000000;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 2.3rem;
+  padding: 15px;
+  margin: 10px;
+  background-color: #2A9D8F;
+}
+
+.calculator-display {
+  padding: 25px 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: right;
+  border: 1px solid black;
+  border-radius: 3px;
+  overflow-x: auto;
+  background-color: white;
+}
+
+.calculator-keypad {
+  display: flex;
+  width: 100%;
+  
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.keypad-button{
+    width: 25%;
+    padding: 15px 1px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    
+}
+
+.keypad-button:hover{
+    filter: brightness(80%);
+    transition: filter.25s;
+}
+
+.keypad-button.yellow{
+    background-color:  #E76F51;
+}
+
+.keypad-button.large{
+  width: 50%;
+}
+
+.keypad-button.large.delete{
+    width: 50%;
+    background-color: #E9C46A;
+}
+
+.keypad-button.dark{
+  background-color: #F4A261;
+}
+
+.text{
+  font-size: 1.3rem;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+
